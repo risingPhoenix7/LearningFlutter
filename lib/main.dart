@@ -53,7 +53,7 @@ class Home extends StatelessWidget {
                 ),
             )
         )*/
-        body: Center(
+        /*body: Center(
             child : RaisedButton.icon(
               onPressed: (){
                 print('you clicked me');
@@ -74,7 +74,20 @@ class Home extends StatelessWidget {
                 textColor: Colors.green,
               hoverColor: Colors.black,
             )
-        )
+        )*/
+      //If it has a child widget it restricts itself to the size of that widget
+      body:Container(
+        height:260,
+        padding:EdgeInsets.fromLTRB(10, 10, 10, 10),//container and its inside
+        margin: EdgeInsets.all(150),//container and its outside
+        child:Text('Hi hello',
+        style: TextStyle(
+          fontSize: 50
+        ),),
+        color:Colors.purple,
+       //margin:,
+        //padding:,
+      ),
       );
 
     //Scaffold is like a wrapper to lots of widgets like appBar.body.bottomNavigationBar
